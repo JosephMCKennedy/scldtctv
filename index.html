@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SocialDetective - Profile Viewer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-background"></div>
+
+    <div class="ad-layout-container">
+        <!-- TOP AD -->
+        <div class="ad-banner top-ad">
+            <span class="ad-label">ADVERTISEMENT</span>
+            <script async="async" data-cfasync="false" src="https://pl29650036.effectivecpmnetwork.com/32bf12b05758e530c0b4c381870d700e/invoke.js"></script>
+            <div id="container-32bf12b05758e530c0b4c381870d700e"></div>
+        </div>
+
+        <div class="main-content-row">
+            <!-- LEFT ADS -->
+            <div class="ad-column left-column">
+                <div class="ad-sidebar left-ad">
+                    <span class="ad-label">ADVERTISEMENT</span>
+                    <script async="async" data-cfasync="false" src="https://pl29650036.effectivecpmnetwork.com/32bf12b05758e530c0b4c381870d700e/invoke.js"></script>
+                    <div id="container-32bf12b05758e530c0b4c381870d700e"></div>
+                </div>
+                <div class="ad-sidebar left-ad-2">
+                    <span class="ad-label">ADVERTISEMENT</span>
+                    <script async="async" data-cfasync="false" src="https://pl29650036.effectivecpmnetwork.com/32bf12b05758e530c0b4c381870d700e/invoke.js"></script>
+                    <div id="container-32bf12b05758e530c0b4c381870d700e"></div>
+                </div>
+            </div>
+
+            <!-- MAIN APP AREA -->
+            <div class="app-wrapper">
+                <!-- 1. LANGUAGE SELECTION SCREEN -->
+                <section id="language-screen" class="screen active">
+                    <div class="card fade-in">
+                        <div class="logo-container">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <p style="font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#4f46e5;margin-bottom:6px;">🔍 INTELLIGENCE PLATFORM</p>
+                        <h1 style="font-size:1.8rem;font-weight:800;color:#111827;margin-bottom:4px;letter-spacing:-0.5px;">Social<span style="color:#4f46e5;">Detective</span></h1>
+                        <p style="font-size:0.8rem;color:#9ca3af;margin-bottom:20px;font-style:italic;">Uncover the truth behind every profile.</p>
+                        <h2 style="font-size:1rem;font-weight:600;margin-bottom:4px;">Welcome / Ho&#351;geldiniz</h2>
+                        <p class="subtitle">Please select your language to continue</p>
+                        
+                        <div class="lang-grid">
+                            <button class="lang-btn" data-lang="en"><span class="lang-tag">EN</span> English</button>
+                            <button class="lang-btn" data-lang="tr"><span class="lang-tag">TR</span> Türkçe</button>
+                            <button class="lang-btn" data-lang="es"><span class="lang-tag">ES</span> Español</button>
+                            <button class="lang-btn" data-lang="de"><span class="lang-tag">DE</span> Deutsch</button>
+                            <button class="lang-btn" data-lang="fr"><span class="lang-tag">FR</span> Français</button>
+                            <button class="lang-btn" data-lang="ru"><span class="lang-tag">RU</span> Русский</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 1.1 ADBLOCK WARNING SCREEN -->
+                <section id="adblock-screen" class="screen hidden">
+                    <div class="card slide-up">
+                        <div class="error-icon-large">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h2 data-i18n="adblock_title">AdBlock Detected!</h2>
+                        <p class="error-desc" data-i18n="adblock_desc">We rely on ad revenue to keep our servers running and this service 100% free. Please disable your AdBlocker to continue using the system.</p>
+                        
+                        <button id="refresh-page-btn" class="primary-btn">
+                            <i class="fa-solid fa-rotate-right"></i> <span data-i18n="adblock_btn">I Disabled It, Reload Page</span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- 1.5. SUPPORT MESSAGE SCREEN -->
+                <section id="support-screen" class="screen hidden">
+                    <div class="card slide-up">
+                        <div class="heart-icon-large">
+                            <i class="fa-solid fa-heart-circle-check"></i>
+                        </div>
+                        <h2 data-i18n="support_title">100% Free Service!</h2>
+                        <div class="support-text-box">
+                            <p data-i18n="support_desc1">We never charge you a single penny for this service.</p>
+                            <p data-i18n="support_desc2">However, running these deep-scan servers costs us thousands of dollars every month. To keep this project alive and free, we kindly ask you to support us by viewing and clicking on the sponsor ads you encounter.</p>
+                            <p data-i18n="support_desc3">Your support means everything to us. â¤ï¸</p>
+                        </div>
+                        
+                        <button id="understand-btn" class="primary-btn">
+                            <i class="fa-solid fa-handshake-angle"></i> <span data-i18n="support_btn">I Understand & Support</span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- 2. PLATFORM SELECTION SCREEN -->
+                <section id="platform-screen" class="screen hidden">
+                    <div class="card slide-up">
+                        <h2 data-i18n="app_title">SocialDetective</h2>
+                        <p class="subtitle" data-i18n="platform_subtitle">Select the platform you want to analyze.</p>
+                        
+                        <div class="platform-list">
+                            <button class="social-btn instagram" data-platform="instagram">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </button>
+                            <button class="social-btn tiktok" data-platform="tiktok">
+                                <i class="fa-brands fa-tiktok"></i> TikTok
+                            </button>
+                            <button class="social-btn snapchat" data-platform="snapchat">
+                                <i class="fa-brands fa-snapchat"></i> Snapchat
+                            </button>
+                            <button class="social-btn facebook" data-platform="facebook">
+                                <i class="fa-brands fa-facebook-f"></i> Facebook
+                            </button>
+                            <button class="social-btn twitter" data-platform="twitter">
+                                <i class="fa-brands fa-x-twitter"></i> Twitter/X
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. USERNAME INPUT SCREEN -->
+                <section id="username-screen" class="screen hidden">
+                    <div class="card slide-up">
+                        <div class="back-nav" id="back-to-platforms">
+                            <i class="fa-solid fa-chevron-left"></i> <span data-i18n="back_btn">Back</span>
+                        </div>
+                        <div class="platform-icon-large" id="selected-platform-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <h2 data-i18n="enter_username_title">Enter Profile</h2>
+                        <p class="subtitle" data-i18n="enter_username_subtitle">Enter the exact username to start the process.</p>
+                        
+                        <div class="input-group">
+                            <span class="at-symbol" id="platform-prefix-icon">@</span>
+                            <input type="text" id="target-username" data-i18n-placeholder="username_placeholder" placeholder="username" autocomplete="off" autocorrect="off" spellcheck="false">
+                        </div>
+                        <div id="input-error" class="input-error hidden"></div>
+                        
+                        <button id="start-btn" class="primary-btn">
+                            <span data-i18n="start_btn">Continue</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- 4. QUEUE & PROGRESS SCREEN -->
+                <section id="queue-screen" class="screen hidden">
+                    <div class="card">
+                        <div class="scanning-animation">
+                            <div class="scan-circle"></div>
+                            <div class="scan-icon"><i class="fa-solid fa-user-lock"></i></div>
+                        </div>
+                        
+                        <h2 id="status-title" data-i18n="status_resolving">Resolving user profile...</h2>
+                        
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                            <div class="progress-text" id="progress-text">0%</div>
+                        </div>
+
+                        <div class="queue-info-box">
+                            <div class="queue-stat">
+                                <span class="label" data-i18n="queue_label">Queue Position</span>
+                                <span class="value" id="queue-number">--</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="queue-stat">
+                                <span class="label" data-i18n="time_label">Est. Time</span>
+                                <span class="value" id="est-time">--:--</span>
+                            </div>
+                        </div>
+
+                        <div class="ad-strategy-box">
+                            <div class="ad-badge" data-i18n="tip">TIP</div>
+                            <p data-i18n="ad_prompt">Want to finish faster? Watch a quick ad to jump <strong>3 spots</strong> forward in the queue!</p>
+                            <button id="watch-ad-btn" class="action-btn pulse">
+                                <i class="fa-solid fa-bolt"></i> <span data-i18n="ad_btn">Watch Ad (Jump 3 Spots)</span>
+                            </button>
+                            <div id="ad-success-msg" class="success-msg hidden">
+                                <i class="fa-solid fa-circle-check"></i> <span data-i18n="ad_success">Ad verified! You jumped 3 spots.</span>
+                            </div>
+                        </div>
+                        
+                        <p class="warning-text-small">
+                            <i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="do_not_close">Do not close or refresh this page, the connection may be lost.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 5. ERROR SCREEN -->
+                <section id="error-screen" class="screen hidden">
+                    <div class="card">
+                        <div class="error-icon-large">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <h2 data-i18n="error_title">Profile is Private</h2>
+                        <p class="error-desc" data-i18n="error_desc">We could not retrieve the target's messages or hidden interactions because they have strict privacy settings enabled.</p>
+                        
+                        <div class="privacy-tip">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span data-i18n="error_tip">Only mutual followers can bypass this security layer.</span>
+                        </div>
+
+                        <button id="retry-btn" class="secondary-btn">
+                            <span data-i18n="retry_btn">Try Another Profile</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT ADS -->
+            <div class="ad-column right-column">
+                <div class="ad-sidebar right-ad">
+                    <span class="ad-label">ADVERTISEMENT</span>
+                    <script async="async" data-cfasync="false" src="https://pl29650036.effectivecpmnetwork.com/32bf12b05758e530c0b4c381870d700e/invoke.js"></script>
+                    <div id="container-32bf12b05758e530c0b4c381870d700e"></div>
+                </div>
+                <div class="ad-sidebar right-ad-2">
+                    <span class="ad-label">ADVERTISEMENT</span>
+                    <script async="async" data-cfasync="false" src="https://pl29650036.effectivecpmnetwork.com/32bf12b05758e530c0b4c381870d700e/invoke.js"></script>
+                    <div id="container-32bf12b05758e530c0b4c381870d700e"></div>
+                </div>
+            </div>
+        </div>
+
+    <!-- FULLSCREEN INTERSTITIAL AD -->
+    <div id="interstitial-ad" class="interstitial hidden">
+        <div class="interstitial-inner">
+            <div class="interstitial-label">ADVERTISEMENT</div>
+
+            <!-- Buraya kendi reklam kodunu koy -->
+            <div class="interstitial-ad-box">
+                <script src="https://pl29650059.effectivecpmnetwork.com/27/a7/c0/27a7c0909dae1a0375b08dab5478c915.js"></script>
+            </div>
+
+            <div class="interstitial-footer">
+                <span id="interstitial-timer-text">Closing in <strong id="interstitial-countdown">5</strong>s...</span>
+                <button id="interstitial-close-btn" class="interstitial-close hidden">
+                    <i class="fa-solid fa-xmark"></i> Close Ad
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="ad-banner bottom-ad">
+            <span class="ad-label">ADVERTISEMENT</span>
+            <script async="async" data-cfasync="false" src="https://pl29650036.effectivecpmnetwork.com/32bf12b05758e530c0b4c381870d700e/invoke.js"></script>
+            <div id="container-32bf12b05758e530c0b4c381870d700e"></div>
+        </div>
+    </div>
+
+    <!-- AD MODAL (IN-PAGE) -->
+    <div id="ad-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-card">
+            <button id="close-modal-btn" class="close-btn hidden"><i class="fa-solid fa-xmark"></i></button>
+            <h3 data-i18n="modal_title">Sponsor Message</h3>
+            <p data-i18n="modal_desc">Click the ad below to verify and jump the queue.</p>
+            
+            <!-- Fake Ad Container (Replace with actual ad network tag later) -->
+            <div id="fake-ad-box" class="fake-ad-box">
+                <script src="https://pl29650059.effectivecpmnetwork.com/27/a7/c0/27a7c0909dae1a0375b08dab5478c915.js"></script>
+            </div>
+            
+            <p id="modal-countdown" class="modal-countdown"><span data-i18n="modal_wait">You can close in</span> <strong id="countdown-sec">5</strong> <span data-i18n="modal_seconds">seconds...</span></p>
+            <div id="modal-error" class="modal-error hidden">
+                <i class="fa-solid fa-circle-exclamation"></i> <span data-i18n="modal_error">You must click the ad to receive your reward!</span>
+            </div>
+            
+            <div id="modal-verifying" class="modal-verifying hidden">
+                <i class="fa-solid fa-circle-notch fa-spin"></i> <span data-i18n="modal_verifying">Verifying click...</span>
+            </div>
+        </div>
+    </div>
+    <!-- LIVE COUNTER BADGE -->
+    <div id="live-counter-badge" class="live-counter-badge">
+        <div class="live-dot"></div>
+        <span id="live-count-text">1,245</span> <span data-i18n="active_users">Active Users</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
